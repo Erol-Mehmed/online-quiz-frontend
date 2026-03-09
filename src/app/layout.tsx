@@ -3,6 +3,7 @@ import "./globals.css";
 import React from "react";
 import Container from "../components/layout/Container";
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Quizzes",
@@ -25,7 +26,7 @@ export default function RootLayout({
           </Container>
         </main>
 
-      {/*<Footer />*/}
+      <Footer />
       </body>
     </html>
   );
