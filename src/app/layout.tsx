@@ -21,12 +21,10 @@ export default function RootLayout({
         <Header />
 
         <main className="flex-1 py-8">
-          <Container>
-            {children}
-          </Container>
+          <Container>{children}</Container>
         </main>
 
-      <Footer />
+        <Footer />
       </body>
     </html>
   );
