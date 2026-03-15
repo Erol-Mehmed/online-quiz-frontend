@@ -10,7 +10,7 @@ const Home = () => {
       <div className="flex justify-center gap-4">
         <Link
           href="/quizzes"
-          className="rounded bg-blue-600 px-6 py-3 text-white hover:bg-blue-700"
+          className="rounded bg-indigo-600 px-6 py-3 text-white hover:bg-indigo-700"
         >
           Browse Quizzes
         </Link>

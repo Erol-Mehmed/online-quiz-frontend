@@ -17,8 +17,8 @@ const NavLink = ({ children, urlEndpoint }: NavLinkProps) => {
   return (
     <Link
       href={urlEndpoint}
-      className={`px-4 py-2 rounded transition 
-    ${isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600 hover:bg-gray-200"}`}
+      className={`px-4 py-2 rounded transition text-white
+    ${isActive ? "text-indigo-200 font-semibold" : "text-gray-700 hover:text-gray-200"}`}
     >
       {children}
     </Link>
@@ -27,7 +27,7 @@ const NavLink = ({ children, urlEndpoint }: NavLinkProps) => {
 
 export default function Header() {
   return (
-    <header className="bg-gray-50 border-b">
+    <header className="bg-indigo-600 shadow text-white border-b">
       <Container>
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-xl font-bold">
