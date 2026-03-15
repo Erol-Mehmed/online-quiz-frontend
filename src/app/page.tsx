@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="space-y-6 text-center">
       <h1 className="text-4xl font-bold">Online Quiz System</h1>
@@ -17,4 +17,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

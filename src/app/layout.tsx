@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   description: "Create and solve quizzes.",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
@@ -28,4 +28,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
