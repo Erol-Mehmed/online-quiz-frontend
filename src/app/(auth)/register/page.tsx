@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { InputField } from "@/src/components/ui/InputField";
 import { StyledButton } from "@/src/components/ui/StyledButton";
 import Link from "next/link";
+import { authService } from "@/src/services/authService";
 
 const RegisterPage = () => {
   const {
@@ -17,10 +18,7 @@ const RegisterPage = () => {
   });
 
   const onSubmit = async (data: RegisterFormData) => {
-    console.log("Register data>>>", data);
-
-    // later
-    // await authService.register(data);
+    await authService.register(data);
   };
 
   return (

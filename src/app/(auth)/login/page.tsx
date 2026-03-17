@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { StyledButton } from "@/src/components/ui/StyledButton";
 import { InputField } from "@/src/components/ui/InputField";
 import Link from "next/link";
+import { authService } from "@/src/services/authService";
 
 const LoginPage = () => {
   const {
@@ -17,10 +18,7 @@ const LoginPage = () => {
   });
 
   const onSubmit = async (data: LoginFormData) => {
-    console.log("Login data>>>", data);
-
-    // later
-    //  await authService.login(data);
+     await authService.login(data);
   };
 
   return (
